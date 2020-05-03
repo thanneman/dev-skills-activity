@@ -9,18 +9,16 @@
   text-align: center;
   padding-top: 10px;
 }
-
 .step-wrap {
   width: 300px;
 }
 
-/* Styles for medium screens and up */
-@media only screen and (min-width: 768px) {
+/* Styles for small screens and up */
+@media only screen and (min-width: 640px) {
   .post-number {
     right: 15px;
     top: 40px;
   }
-
   .step-wrap {
     width: 40%;
   }

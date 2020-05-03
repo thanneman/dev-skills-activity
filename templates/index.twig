@@ -11,67 +11,67 @@
 </head>
 
 <body class="box-border">
-    <main class="container max-w-screen-sm p-5 md:p-6">
+    <main class="container max-w-screen-sm p-5 sm:p-6">
         <header>
             <div class="inline-block py-1 px-3 bg-blue-700 text-xs uppercase text-white">Process</div>
-            <h1 class="font-bold text-4xl my-5 leading-tight">{{  entry.mainTitle }}</h1>
+            <h1 class="font-bold text-4xl my-5 leading-tight">{{ entry.mainTitle }}</h1>
         </header>
         <section>
             <!-- Step #1 -->
-            <article class="block mb-8 md:mb-5 md:clear-both">
-                <div class="step-wrap flex-wrap relative block md:inline-block">
+            <article class="block mb-8 sm:mb-5 sm:clear-both">
+                <div class="step-wrap flex-wrap relative block sm:inline-block">
                     <div class="post-number text-white font-bold text-xl">1</div>
                     <div class="w-10/12">
-                        <img src="{{ entry.step1ImageUrl }}" alt="{{  entry.step1Title }}">
+                        <img src="{{ entry.step1ImageUrl }}" alt="{{ entry.step1Title }}">
                     </div>
                 </div>
-                <div class="flex-wrap block w-full md:inline-block md:w-3/5 md:float-right">
-                    <h2 class="font-bold text-2xl my-2 leading-tight md:text-3xl md:mb-2">{{  entry.step1Title }}</h2>
-                    <p>{{  entry.step1Details }}</p>
+                <div class="flex-wrap block w-full sm:inline-block sm:w-3/5 sm:float-right">
+                    <h2 class="font-bold text-2xl my-2 leading-tight sm:text-3xl sm:mb-2 sm:mt-0">{{ entry.step1Title }}</h2>
+                    <p class="post-details">{{ entry.step1Details }}</p>
                 </div>
             </article>
             <!-- Step #2 -->
             {% if entry.step2Title|length > 1 %}
-            <article class="block mb-8 md:pt-5 md:clear-both">
-                <div class="step-wrap flex-wrap relative block md:inline-block">
+            <article class="block mb-8 sm:pt-5 sm:clear-both">
+                <div class="step-wrap flex-wrap relative block sm:inline-block">
                     <div class="post-number text-white font-bold text-xl">2</div>
                     <div class="w-10/12">
-                        <img src="{{ entry.step2ImageUrl }}" alt="{{  entry.step2Title }}">
+                        <img src="{{ entry.step2ImageUrl }}" alt="{{ entry.step2Title }}">
                     </div>
                 </div>
-                <div class="flex-wrap block w-full md:inline-block md:w-3/5 md:float-right">
-                    <h2 class="font-bold text-2xl my-2 leading-tight md:text-3xl md:mb-2">{{  entry.step2Title }}</h2>
-                    <p>{{  entry.step2Details }}</p>
+                <div class="flex-wrap block w-full sm:inline-block sm:w-3/5 sm:float-right">
+                    <h2 class="font-bold text-2xl my-2 leading-tight sm:text-3xl sm:mb-2 sm:mt-0">{{ entry.step2Title }}</h2>
+                    <p class="post-details">{{ entry.step2Details }}</p>
                 </div>
             </article>
             {% endif %}
             <!-- Step #3 -->
             {% if entry.step3Title|length > 1 %}
-            <article class="block mb-8 md:pt-5 md:clear-both">
-                <div class="step-wrap flex-wrap relative block md:inline-block">
+            <article class="block mb-8 sm:pt-5 sm:clear-both">
+                <div class="step-wrap flex-wrap relative block sm:inline-block">
                     <div class="post-number text-white font-bold text-xl">3</div>
                     <div class="w-10/12">
                         <img src="{{ entry.step3ImageUrl }}" alt="{{  entry.step3Title }}">
                     </div>
                 </div>
-                <div class="flex-wrap block w-full md:inline-block md:w-3/5 md:float-right">
-                    <h2 class="font-bold text-2xl my-2 leading-tight md:text-3xl md:mb-2">{{  entry.step3Title }}</h2>
-                    <p>{{  entry.step3Details }}</p>
+                <div class="flex-wrap block w-full sm:inline-block sm:w-3/5 sm:float-right">
+                    <h2 class="font-bold text-2xl my-2 leading-tight sm:text-3xl sm:mb-2 sm:mt-0">{{  entry.step3Title }}</h2>
+                    <p class="post-details">{{ entry.step3Details }}</p>
                 </div>
             </article>
             {% endif %}
             <!-- Step #4 -->
             {% if entry.step4Title|length > 1 %}
-            <article class="block mb-8 md:py-5 md:clear-both">
-                <div class="step-wrap flex-wrap relative block md:inline-block">
+            <article class="block mb-8 sm:py-5 sm:clear-both">
+                <div class="step-wrap flex-wrap relative block sm:inline-block">
                     <div class="post-number text-white font-bold text-xl">4</div>
                     <div class="w-10/12">
-                        <img src="{{ entry.step4ImageUrl }}" alt="{{  entry.step4Title }}">
+                        <img src="{{ entry.step4ImageUrl }}" alt="{{ entry.step4Title }}">
                     </div>
                 </div>
-                <div class="flex-wrap block w-full md:inline-block md:w-3/5 md:float-right">
-                    <h2 class="font-bold text-2xl my-2 leading-tight md:text-3xl md:mb-2">{{  entry.step4Title }}</h2>
-                    <p>{{  entry.step4Details }}</p>
+                <div class="flex-wrap block w-full sm:inline-block sm:w-3/5 sm:float-right">
+                    <h2 class="font-bold text-2xl my-2 leading-tight sm:text-3xl sm:mb-2 sm:mt-0">{{ entry.step4Title }}</h2>
+                    <p class="post-details">{{ entry.step4Details }}</p>
                 </div>
             </article>
             {% endif %}
